@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE KSysGuardWorkSheet>
+<WorkSheet rows="4" interval="2" title="Cluster" columns="2" locked="0">
+ <host shell="ssh" command="" port="-1" name="s11.quinta"/>
+ <host shell="ssh" command="" port="-1" name="s12.quinta"/>
+ <host shell="ssh" command="" port="-1" name="s13.quinta"/>
+ <host shell="" command="ssh -l root s14.quinta ksysguardd" port="-1" name="S14"/>
+ <display columnSpan="1" title="S11 Load" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="0" autoRange="1" hLines="1" column="0" manualRange="0" rowSpan="1">
+  <beam sensorType="float" hostName="s11.quinta" sensorName="cpu/system/TotalLoad" color="0xff0057ae"/>
+  <beam sensorType="float" hostName="s11.quinta" sensorName="cpu/system/sys" color="0xffe20800"/>
+  <beam sensorType="float" hostName="s11.quinta" sensorName="cpu/system/user" color="0xfff3c300"/>
+ </display>
+ <display columnSpan="1" title="S12 Load" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="1" autoRange="1" hLines="1" column="0" manualRange="0" rowSpan="1">
+  <beam sensorType="float" hostName="s12.quinta" sensorName="cpu/system/TotalLoad" color="0xff0057ae"/>
+  <beam sensorType="float" hostName="s12.quinta" sensorName="cpu/system/sys" color="0xffe20800"/>
+  <beam sensorType="float" hostName="s12.quinta" sensorName="cpu/system/user" color="0xfff3c300"/>
+ </display>
+ <display columnSpan="1" title="S13 Load" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="2" autoRange="1" hLines="1" column="0" manualRange="0" rowSpan="1">
+  <beam sensorType="float" hostName="s13.quinta" sensorName="cpu/system/TotalLoad" color="0xff0057ae"/>
+  <beam sensorType="float" hostName="s13.quinta" sensorName="cpu/system/sys" color="0xffe20800"/>
+  <beam sensorType="float" hostName="s13.quinta" sensorName="cpu/system/user" color="0xfff3c300"/>
+ </display>
+ <display columnSpan="1" title="S14 Load" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="3" autoRange="1" hLines="1" column="0" manualRange="0" rowSpan="1">
+  <beam sensorType="float" hostName="S14" sensorName="cpu/system/TotalLoad" color="0xff0057ae"/>
+  <beam sensorType="float" hostName="S14" sensorName="cpu/system/sys" color="0xffe20800"/>
+  <beam sensorType="float" hostName="S14" sensorName="cpu/system/user" color="0xfff3c300"/>
+ </display>
+ <display columnSpan="1" title="S11 Memory" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="3" autoRange="1" hLines="1" column="1" manualRange="0" rowSpan="1">
+  <beam sensorType="integer" hostName="S14" sensorName="mem/physical/used" color="0xff0057ae"/>
+  <beam sensorType="integer" hostName="S14" sensorName="mem/physical/application" color="0xffe20800"/>
+  <beam sensorType="integer" hostName="S14" sensorName="mem/physical/buf" color="0xfff3c300"/>
+  <beam sensorType="integer" hostName="S14" sensorName="mem/physical/cached" color="0xffff0000"/>
+ </display>
+ <display columnSpan="1" title="S12 Memory" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="2" autoRange="1" hLines="1" column="1" manualRange="0" rowSpan="1">
+  <beam sensorType="integer" hostName="s13.quinta" sensorName="mem/physical/used" color="0xff0057ae"/>
+  <beam sensorType="integer" hostName="s13.quinta" sensorName="mem/physical/application" color="0xffe20800"/>
+  <beam sensorType="integer" hostName="s13.quinta" sensorName="mem/physical/buf" color="0xfff3c300"/>
+  <beam sensorType="integer" hostName="s13.quinta" sensorName="mem/physical/cached" color="0xffff0000"/>
+ </display>
+ <display columnSpan="1" title="S13 Memory" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="1" autoRange="1" hLines="1" column="1" manualRange="0" rowSpan="1">
+  <beam sensorType="integer" hostName="s12.quinta" sensorName="mem/physical/used" color="0xff0057ae"/>
+  <beam sensorType="integer" hostName="s12.quinta" sensorName="mem/physical/application" color="0xffe20800"/>
+  <beam sensorType="integer" hostName="s12.quinta" sensorName="mem/physical/buf" color="0xfff3c300"/>
+  <beam sensorType="integer" hostName="s12.quinta" sensorName="mem/physical/cached" color="0xffff0000"/>
+ </display>
+ <display columnSpan="1" title="S14 Memory" class="FancyPlotter" showUnit="0" fontSize="8" vDistance="30" svgBackground="" unit="" hScale="6" vLines="0" labels="1" vScroll="0" version="1" stacked="0" row="0" autoRange="1" hLines="1" column="1" manualRange="0" rowSpan="1">
+  <beam sensorType="integer" hostName="s11.quinta" sensorName="mem/physical/used" color="0xff0057ae"/>
+  <beam sensorType="integer" hostName="s11.quinta" sensorName="mem/physical/application" color="0xffe20800"/>
+  <beam sensorType="integer" hostName="s11.quinta" sensorName="mem/physical/buf" color="0xfff3c300"/>
+  <beam sensorType="integer" hostName="s11.quinta" sensorName="mem/physical/cached" color="0xffff0000"/>
+ </display>
+</WorkSheet>
